@@ -82,7 +82,7 @@ Hence the eigenmodes, $\sp_n$, are orthogonal. The real egeinvalues, $\kappa_n$,
 \label{normalization0}
 \frac{1}{H}\int_{-h}^{0}\!\! \sp_n \sp_m \dd z = \delta_{mn}\com
 \eeq
-where $\delta_{mn}$ is the Dirac delta. Equation \eqref{eigpb} can be rewritten as
+where $\delta_{mn}$ is the Kronecker delta. Equation \eqref{eigpb} can be rewritten as
 \beq
 \label{eigpb_wkb}
 \bur \sp_n'' + \left[\bur\right]' \sp_n' + \kappa_n^2 \,\sp_n = 0\per
@@ -138,7 +138,7 @@ Notice that the imaginary part in the $\log$ in \eqref{Q_1} just contributes an 
 \beq
 Q_1 = \log \sqrt{S(z)} + \text{const} \,\, \per
 \eeq
-In the most common WKB approximation (a.k.a ``physical optics'') we truncate \eqref{aseries} at $\mathcal{O}(\ep)$. The solution to \eqref{dirich_eigpb_wkb_ep}, consistent with the bottom boundary condition \eqref{bc}, is
+In the most common WKB approximation (a.k.a ``physical optics'': $\sp_n^{po}$) we truncate \eqref{aseries} at $\mathcal{O}(\ep)$. The solution to \eqref{dirich_eigpb_wkb_ep}, consistent with the bottom boundary condition \eqref{bc}, is
 \beq
 \sp_n^{po} = A_n\, \sqrt{N(z)}\, \cos \left(\frac{\kappa_n}{f_0} \int_{-h}^{z} \!\!\!N(\xi) \dd \xi\right)\com
 \eeq
@@ -155,7 +155,7 @@ where the mean buoyancy frequency is
 The constant $A_n$ is determined by the normalization condition \eqref{normalization0}. We have
 \beq
 \label{an_eqn}
-A_n^2 \, \int_{-h}^{0}\!\! N(z) \cos \left(\frac{\kappa_n}{f_0}\int_{-h}^{z}\!\!\!N(\xi) \dd \xi\right) \dd z = H\com\qquad n\ge 1\per
+A_n^2 \, \int_{-h}^{0}\!\! N(z) \cos^2 \left(\frac{\kappa_n}{f_0}\int_{-h}^{z}\!\!\!N(\xi) \dd \xi\right) \dd z = H\com\qquad n\ge 1\per
 \eeq
 The integral in \eqref{an_eqn} can be evaluated exactly by making the change of variables 
 \beq
@@ -209,7 +209,7 @@ Alternatively, we can work on  the approximation from the beginning. The WKB app
 The eigenvalues $\kappa_n$ are the same as before \eqref{kappan}. (This should be no surprise because it follow  from the definition of $\sp_n$ and $\sr_n$. Nonetheless,  the verification is a good sanity check.) To find $B_n$ we use the normalization \eqref{normalization2}
 \beq
 \label{bn_eqn}
-B_n^2 \, \int_{-h}^{0}\!\!\frac{1}{N(z)} \sin \left(\frac{\kappa_n}{f_0}\int_{-h}^{z}\!\!\!N(\xi) \dd \xi\right) \dd z = h\com\qquad n\ge 1\per
+B_n^2 \, \int_{-h}^{0}\!\!\frac{1}{N(z)} \sin^2 \left(\frac{\kappa_n}{f_0}\int_{-h}^{z}\!\!\!N(\xi) \dd \xi\right) \dd z = h\com\qquad n\ge 1\per
 \eeq
 We use a similar trick as above i.e., we change variables with
 \beq
